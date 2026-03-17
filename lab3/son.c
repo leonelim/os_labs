@@ -17,7 +17,7 @@ int main() {
   st = time2.tms_stime - time1.tms_stime;
   cut = time2.tms_cutime - time1.tms_cutime;
   cst = time2.tms_cstime - time1.tms_cstime;
-  printf("pid: %d time: ut: %ld st: %ld cu: %ld cs: %ld grandgrandfather\n",
-         pid, ut, st, cut, cst);
+  printf("pid: %d time: ut: %ld st: %ld cu: %ld cs: %ld son\n", pid, ut, st,
+         cut, cst);
   return 0;
 }

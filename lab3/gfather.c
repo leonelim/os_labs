@@ -33,7 +33,7 @@ int main() {
   cut = time2.tms_cutime - time1.tms_cutime;
   cst = time2.tms_cstime - time1.tms_cstime;
   printf("pid: %d ppid: %d time: ut: %ld st: %ld cu: %ld cs: %ld "
-         "grandgrandfather\n",
+         "grandfather\n",
          pid, ppid, ut, st, cut, cst);
   return 0;
 }
