@@ -15,6 +15,6 @@ int main() {
   times(&time2);
   ut = time2.tms_utime - time1.tms_utime;
   st = time2.tms_stime - time1.tms_stime;
-  printf("pid: %d time: ut: %ld st: %ld son\n", pid, ut, st);
+  printf("pid: %d ppid: %d time: ut: %ld st: %ld son\n", pid, ppid, ut, st);
   return 0;
 }
