@@ -9,4 +9,3 @@ clean:
 	for i in {2..9}; do \
 		rm "1$${i}" "2$${i}"; \
 	done
-	rm $(BINS)
