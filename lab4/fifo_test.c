@@ -38,8 +38,8 @@ int main() {
       sprintf(name1, "1%d", i + 2);
       sprintf(name2, "2%d", i + 2);
 
-      int fd2 = open(name2, O_WRONLY);
       int fd1 = open(name1, O_RDONLY);
+      int fd2 = open(name2, O_WRONLY);
 
       char proc[100];
       sprintf(proc, "%d", i + 2);
@@ -67,6 +67,7 @@ int main() {
     exit(0);
   }
 
+  wait(NULL);
   wait(NULL);
   for (int i = 0; i < 8; ++i)
     wait(NULL);
